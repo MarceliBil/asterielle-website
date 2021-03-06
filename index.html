@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Strona poświęcona grze Asterielle: Slayer of Dwarves">
+  <title>Asterielle: Slayer of Dwarves</title>
+  <link rel="icon" href="./assets/icons/icon.png">
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <div class="app">
+    <div class="left__navigation flex">
+
+
+      <a href="#start">
+        <div class="section__circle flex">
+          <div class="current__section" id="start__section"></div>
+        </div>
+      </a>
+
+      <a href="#about">
+        <div class="section__circle flex">
+          <div class="current__section" id="about__section"></div>
+        </div>
+      </a>
+
+      <a href="#join__us">
+        <div class="section__circle flex">
+          <div class="current__section" id="join__us__section"></div>
+        </div>
+      </a>
+
+      <a href="#footer">
+        <div class="section__circle flex">
+          <div class="current__section" id="footer__section"></div>
+        </div>
+
+      </a>
+    </div>
+
+    <div class="container">
+      <section class="start flex" id="start">
+        <header class="header flex">
+
+          <a href="https://asterielle.netlify.app" class="logo__light"> <img loading="lazy" src="./assets/images/logo__light.png"
+              alt="logo-light"></a>
+
+          <div class="hamburger flex">
+            <div class="bar one"></div>
+            <div class="bar two"></div>
+            <div class="bar three"></div>
+          </div>
+
+          <ul class="menu__list">
+            <li class="menu__item flex">
+              <a href="#start" class="menu__link"> Start </a>
+            </li>
+
+            <li class="menu__item flex">
+              <a href="#about" class="menu__link"> O grze </a>
+            </li>
+
+            <li class="menu__item space">
+
+            </li>
+
+            <li class="menu__item flex">
+              <a href="#join__us" class="menu__link"> Dołącz do nas </a>
+            </li>
+
+            <li class="menu__item flex">
+              <a href="#footer" class="menu__link"> Kontakt </a>
+            </li>
+          </ul>
+        </header>
+
+        <div class="buttons flex" data-aos="fade-up">
+
+
+          <a href="http://elf-vs-dwarves.pl/newest/" target="_blank">
+            <button>zagraj</button>
+          </a>
+
+
+          <a href="#about">
+            <button style="background-color: #f2f2f2; color: #101010;">poznaj grę</button>
+          </a>
+
+        </div>
+      </section>
+
+      <section class="about flex" id="about">
+        <h1>O grze</h1>
+
+        <div class="about__wrapper flex" data-aos="fade-up">
+          <img loading="lazy" src="./assets/images/about__img.png" alt="about-image" class="tittle__screen__img" />
+
+          <div class="about__description flex">
+            <h3 class="about__header">
+              Gra jest prostym idle clickerem, tworzonym przez mały zespół
+              gamedevowy Flying Octopus.
+            </h3>
+
+            <p>
+              Wszystko zaczęło się, gdy okrutne krasnoludy najechały rodzinny
+              las elfów i&nbsp;zaczęły wycinkę. Gdyby tego było mało, porwały one
+              także WSZYSTKIE żony elfki Asterielle!
+            </p>
+          </div>
+        </div>
+
+        <div class="about__wrapper about__wrapper__two flex" data-aos="fade-up">
+          <img loading="lazy" src="./assets/images/asterielle__img.png" alt="about-image" class="asterielle__img" />
+          <div class="about__description">
+            <h3 class="about__header">
+              Wciel się w Asterielle i podejmij się obrony lasu przed
+              zniszczeniem!
+            </h3>
+
+            <p>
+              W&nbsp;zadaniu tym pomoże Ci nieodłączny, elfi łuk i&nbsp;unikalne
+              zdolności bohaterki. Uratuj swoje wybranki z&nbsp;łap chciwych
+              krasnoludów i&nbsp;uważaj, by przychylny Ci karczmarz nie dowiedział
+              się o Twoim romansie z&nbsp;jego córką!
+            </p>
+          </div>
+        </div>
+
+        <div class="about__wrapper flex" data-aos="fade-up">
+          <img loading="lazy" src="./assets/images/characters__img.png" alt="about-image" class="characters__img" />
+
+          <div class="about__description">
+            <h3 class="about__header">
+              Zmierz się z różnymi typami przeciwników!
+            </h3>
+
+            <p>
+              W&nbsp;świecie Asterielle można napotkać różne niebezpieczne
+              postacie i&nbsp;stworzenia. Nie pozwól, aby przeszkodziły Ci w&nbsp;wykonaniu
+              misji!
+            </p>
+          </div>
+        </div>
+
+        <a href="http://elf-vs-dwarves.pl/newest/" target="_blank" data-aos="fade-up">
+          <button style=" border-color: #101010;">zagraj</button>
+        </a>
+
+        <a href="./dev-diary/devdiary.html" data-aos="fade-up">
+          <button style="background-color: #f2f2f2; color: #101010; border-color: #101010;">dev diary</button>
+        </a>
+
+      </section>
+
+      <section class="join__us flex" id="join__us" class="parallax-window" data-parallax="scroll" data-image-src="./assets/images/wall__background__img.jpg">
+        <div class="join__us__box flex" data-aos="fade-up">
+          <h2>Dołącz do nas!</h2>
+          <p>
+            Jeśli chcesz zostać członkiem Flying Octopus, skontaktuj się z&nbsp;nami na Discordzie, Facebooku lub przez
+            mail.
+            Przedstaw swoje umiejętności i&nbsp;napisz, czym chciałbyś zajmować się w&nbsp;zespole.
+          </p>
+
+          <span class="email">
+            <img loading="lazy" src="./assets/icons/emailIcon.svg" alt="email-icon" class="email__icon" />
+            <p class="email__adress">flyingoctopusteam@gmail.com</p>
+          </span>
+
+          <div class="meet__our__team flex">
+            <img loading="lazy" src="./assets/images/logo__dark.png" alt="logo-dark" class="logo__dark" />
+
+
+            <a href="https://flyingoctopus.pl" target="_blank" style="margin: 40px 0;">
+              <button style="color: #f2f2f2; border-color: #101010; margin: 0; padding: 15px;">
+                poznaj zespół
+              </button>
+            </a>
+
+          </div>
+      </section>
+
+      <footer class="footer flex " id="footer">
+        <div class="left flex">
+          <a href="http://elf-vs-dwarves.pl/newest/" target="_blank">
+            <button>
+              zagraj
+            </button>
+          </a>
+
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#start" class="menu__link"> Start </a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#about" class="menu__link"> O grze </a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#join__us" class="menu__link"> Dołącz do nas </a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#footer" class="menu__link"> Kontakt </a>
+            </li>
+          </ul>
+
+
+          <p> &copy; 2021 Flying Octopus. All rights reserved.</p>
+
+          <p>Icons made by <a href="https://icon54.com/" title="Pixel perfect" target="_blank">Pixel perfect</a> from <a
+              href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a></p>
+
+
+        </div>
+        <div class="socials flex">
+          <a href="https://flyingoctopus.pl/?fbclid=IwAR0TZ6rk22tsmEYC1TJrCZMpAdpe9vJEFv5ZBROEi8D2GJDkv5-0Fd7QCag"
+            class="flex" target="_blank">
+
+            <img loading="lazy" src="./assets/icons/fo.svg" alt="fo-icon" class="octopus" />
+          </a>
+
+          <a href="https://discord.com/invite/Q2DuSNY" target="_blank" class="flex">
+            <img loading="lazy" src="./assets/icons/discord.svg" alt="discord-icon" class="discord" />
+          </a>
+
+          <a href="https://www.facebook.com/FO.flyingoctopus/" class="flex" target="_blank">
+            <img loading="lazy" src="./assets/icons/facebook.svg" alt="facebook-icon" class="facebook" />
+          </a>
+
+          <a href="https://www.youtube.com/channel/UCVGEPrqt35Tk2CVVmB5klPQ" class="flex" target="_blank">
+            <img loading="lazy" src="./assets/icons/youtube.svg" alt="youtube-icon" class="youtube" />
+          </a>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 190,
+      duration: 800,
+    });
+  </script>
+
+
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
