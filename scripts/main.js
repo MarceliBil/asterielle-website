@@ -1,15 +1,39 @@
-window.addEventListener("scroll", () => {});
-
 //MOBILE MENU
 
 const hamburger = document.querySelector(".hamburger"),
+  header = document.querySelector(".header"),
   menu__list = document.querySelector(".menu__list"),
   one = document.querySelector(".one"),
   two = document.querySelector(".two"),
   three = document.querySelector(".three");
 
 let counter = 0;
-hamburger.addEventListener("click", () => {
+
+window.addEventListener("resize", () => {
+  let window__width = window.innerWidth;
+
+  window__width < 1200
+    ? (menu__list.style = "left: 100vw") &&
+      (one.style.animationName = "oneHide") &&
+      (two.style.animationName = "twoHide") &&
+      (three.style.animationName = "threeHide") &&
+      (counter = 0)
+    : (menu__list.style = "left: 0");
+});
+
+window.addEventListener("scroll", () => {
+  let window__width = window.innerWidth;
+
+  if (window__width < 1200) {
+    menu__list.style = "left: 100vw";
+    one.style.animationName = "oneHide";
+    two.style.animationName = "twoHide";
+    three.style.animationName = "threeHide";
+    counter = 0;
+  }
+});
+
+function hideMenu() {
   counter == 0
     ? (menu__list.style = "left: 0") &&
       (one.style.animationName = "oneShow") &&
@@ -21,27 +45,11 @@ hamburger.addEventListener("click", () => {
       (two.style.animationName = "twoHide") &&
       (three.style.animationName = "threeHide") &&
       counter--;
-});
+}
 
-window.addEventListener("resize", () => {
-  let window__width = window.innerWidth;
-  console.log(window__width);
-
-  if (window__width < 1200) {
-    document.addEventListener("scroll", () => {
-      menu__list.style = "left: 100vw";
-      counter = 0;
-      menu__list.style = "left: 100vw";
-      one.style.animationName = "oneHide";
-      two.style.animationName = "twoHide";
-      three.style.animationName = "threeHide";
-    });
-  }
-});
+hamburger.addEventListener("click", hideMenu);
 
 //HEADER HIDE/SHOW
-
-const header = document.querySelector(".header");
 
 let screenWidth = window.innerWidth;
 
