@@ -97,7 +97,7 @@ img {
     display: none;
     width: 100px;
     height: 100vh;
-    background-image: url("../../assets/images/square.png");
+    background-image: url("../assets/images/square.png");
     box-shadow: 0 0 2px #f2f2f2;
     justify-content: space-evenly;
     -webkit-justify-content: space-evenly;
@@ -131,7 +131,7 @@ img {
       width: 100%;
       flex-direction: column;
       justify-content: space-evenly;
-      background-image: url("../../assets/images/main__background__img.png");
+      background-image: url("../assets/images/main__background__img.png");
       background-size: cover;
       background-position-x: left;
       background-position-y: bottom;
@@ -343,7 +343,7 @@ img {
     }
 
     .join__us {
-      background-image: url("../../assets/images/wall__background__img.jpg");
+      background-image: url("../assets/images/wall__background__img.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
