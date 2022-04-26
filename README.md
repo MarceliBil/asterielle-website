@@ -5,6 +5,6 @@
 A website dedicated to one of the games of the team I was a member of.
 The design of the website was my project (I did it in Figma).
 
-Demo: https://elf-vs-dwarves.pl
+Demo: https://asterielle.pl
 
 
