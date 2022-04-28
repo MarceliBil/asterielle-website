@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Strona poświęcona grze Asterielle: Slayer of Dwarves">
   <title>Asterielle: Slayer of Dwarves</title>
-  <link rel="icon" href="./assets/icons/icon.png">
-  <link rel="stylesheet" href="styles/main.css" />
-
+  <link rel="icon" href="./assets/icons/favicon.png">
+  <link rel="stylesheet" href="./styles/main.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
   <div class="app">
     <div class="left__navigation flex">
-
-
       <a href="#start">
         <div class="section__circle flex">
           <div class="current__section" id="start__section"></div>
@@ -39,24 +36,23 @@
         <div class="section__circle flex">
           <div class="current__section" id="footer__section"></div>
         </div>
-
       </a>
     </div>
 
     <div class="container">
-      <section class="start flex" id="start">
+      <section class="start section flex" id="start">
         <header class="header flex">
 
-          <a href="./" class="logo__light"> <img loading="lazy"
-              src="./assets/images/logo__light.png" alt="logo-light"></a>
+          <a href="./" class="logo__light"> <img loading="lazy" src="./assets/images/logo__light.png"
+              alt="logo-light"></a>
 
           <div class="hamburger flex">
-            <div class="bar one"></div>
-            <div class="bar two"></div>
-            <div class="bar three"></div>
+            <div class="hamburger__bar one"></div>
+            <div class="hamburger__bar two"></div>
+            <div class="hamburger__bar three"></div>
           </div>
 
-          <ul class="menu__list">
+          <ul class="menu__list flex">
             <li class="menu__item flex">
               <a href="#start" class="menu__link"> Start </a>
             </li>
@@ -65,9 +61,7 @@
               <a href="#about" class="menu__link"> O grze </a>
             </li>
 
-            <li class="menu__item space">
-
-            </li>
+            <li class="menu__item space"></li>
 
             <li class="menu__item flex">
               <a href="#join__us" class="menu__link"> Dołącz do nas </a>
@@ -80,12 +74,9 @@
         </header>
 
         <div class="buttons flex" data-aos="fade-up">
-
-
-          <a href="./game/game.html">
+          <a href="https://flyingoctopus.itch.io/asterielle" target="_blank">
             <button>zagraj</button>
           </a>
-
 
           <a href="#about">
             <button style="background-color: #f2f2f2; color: #101010;">poznaj grę</button>
@@ -94,71 +85,77 @@
         </div>
       </section>
 
-      <section class="about flex" id="about">
-        <h1>O grze</h1>
+      <section class="about section flex" id="about">
+        <h2 class="section__title">O grze</h2>
 
-        <div class="about__wrapper flex" data-aos="fade-up">
-          <img loading="lazy" src="./assets/images/about__img.png" alt="about-image" class="tittle__screen__img" />
+        <div class="about__grid__wrapper">
 
-          <div class="about__description flex">
-            <h3 class="about__header">
-              Gra jest prostym idle clickerem, tworzonym przez mały zespół
-              gamedevowy Flying Octopus.
-            </h3>
+          <div class="row__item" data-aos="fade-up">
+            <img loading="lazy" src="./assets/images/about__img.png" alt="about-image" class="tittle__screen__img" />
 
-            <p>
-              Wszystko zaczęło się, gdy okrutne krasnoludy najechały rodzinny
-              las elfów i&nbsp;zaczęły wycinkę. Gdyby tego było mało, porwały one
-              także WSZYSTKIE żony elfki Asterielle!
-            </p>
+            <div class="about__description">
+              <h3 class="about__header">
+                Gra jest prostym idle clickerem, tworzonym przez mały zespół
+                gamedevowy Flying Octopus.
+              </h3>
+
+              <p>
+                Wszystko zaczęło się, gdy okrutne krasnoludy najechały rodzinny
+                las elfów i&nbsp;zaczęły wycinkę. Gdyby tego było mało, porwały one
+                także WSZYSTKIE żony elfki Asterielle!
+              </p>
+            </div>
+          </div>
+
+          <div class="row__item" data-aos="fade-up">
+            <img loading="lazy" src="./assets/images/asterielle__img.png" alt="about-image" class="asterielle__img" />
+            <div class="about__description">
+              <h3 class="about__header">
+                Wciel się w Asterielle i podejmij się obrony lasu przed
+                zniszczeniem!
+              </h3>
+
+              <p>
+                W&nbsp;zadaniu tym pomoże Ci nieodłączny, elfi łuk i&nbsp;unikalne
+                zdolności bohaterki. Uratuj swoje wybranki z&nbsp;łap chciwych
+                krasnoludów i&nbsp;uważaj, by przychylny Ci karczmarz nie dowiedział
+                się o Twoim romansie z&nbsp;jego córką!
+              </p>
+            </div>
+          </div>
+
+          <div class="row__item" data-aos="fade-up">
+            <img loading="lazy" src="./assets/images/characters__img.png" alt="about-image" class="characters__img" />
+
+            <div class="about__description">
+              <h3 class="about__header">
+                Zmierz się z różnymi typami przeciwników!
+              </h3>
+
+              <p>
+                W&nbsp;świecie Asterielle można napotkać różne niebezpieczne
+                postacie i&nbsp;stworzenia. Nie pozwól, aby przeszkodziły Ci w&nbsp;wykonaniu
+                misji!
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="about__wrapper about__wrapper__two flex" data-aos="fade-up">
-          <img loading="lazy" src="./assets/images/asterielle__img.png" alt="about-image" class="asterielle__img" />
-          <div class="about__description">
-            <h3 class="about__header">
-              Wciel się w Asterielle i podejmij się obrony lasu przed
-              zniszczeniem!
-            </h3>
+        <div class="buttons flex" data-aos="fade-up">
+          <a href="https://flyingoctopus.itch.io/asterielle" target="_blank">
+            <button style=" border-color: #101010;">zagraj</button>
+          </a>
 
-            <p>
-              W&nbsp;zadaniu tym pomoże Ci nieodłączny, elfi łuk i&nbsp;unikalne
-              zdolności bohaterki. Uratuj swoje wybranki z&nbsp;łap chciwych
-              krasnoludów i&nbsp;uważaj, by przychylny Ci karczmarz nie dowiedział
-              się o Twoim romansie z&nbsp;jego córką!
-            </p>
-          </div>
+          <a href="./devdiary.html" data-aos="fade-up">
+            <button style="background-color: #f2f2f2; color: #101010; border-color: #101010;">dev diary</button>
+          </a>
         </div>
-
-        <div class="about__wrapper flex" data-aos="fade-up">
-          <img loading="lazy" src="./assets/images/characters__img.png" alt="about-image" class="characters__img" />
-
-          <div class="about__description">
-            <h3 class="about__header">
-              Zmierz się z różnymi typami przeciwników!
-            </h3>
-
-            <p>
-              W&nbsp;świecie Asterielle można napotkać różne niebezpieczne
-              postacie i&nbsp;stworzenia. Nie pozwól, aby przeszkodziły Ci w&nbsp;wykonaniu
-              misji!
-            </p>
-          </div>
-        </div>
-
-        <a href="./game/game.html" data-aos="fade-up">
-          <button style=" border-color: #101010;">zagraj</button>
-        </a>
-
-        <a href="./dev-diary/devdiary.html" data-aos="fade-up">
-          <button style="background-color: #f2f2f2; color: #101010; border-color: #101010;">dev diary</button>
-        </a>
 
       </section>
 
-      <section class="join__us flex" id="join__us" class="parallax-window" data-parallax="scroll"
+      <section class="join__us section flex" id="join__us" class="parallax-window" data-parallax="scroll"
         data-image-src="./assets/images/wall__background__img.jpg">
+
         <div class="join__us__box flex" data-aos="fade-up">
           <h2>Dołącz do nas!</h2>
           <p>
@@ -167,10 +164,11 @@
             Przedstaw swoje umiejętności i&nbsp;napisz, czym chciałbyś zajmować się w&nbsp;zespole.
           </p>
 
-          <span class="email">
+
+          <a href="mailto:flyingoctopusteam@gmail.com" class="email">
             <img loading="lazy" src="./assets/icons/emailIcon.svg" alt="email-icon" class="email__icon" />
             <p class="email__adress">flyingoctopusteam@gmail.com</p>
-          </span>
+          </a>
 
           <div class="meet__our__team flex">
             <img loading="lazy" src="./assets/images/logo__dark.png" alt="logo-dark" class="logo__dark" />
@@ -187,12 +185,11 @@
 
       <footer class="footer flex " id="footer">
         <div class="left flex">
-          <a href="./game/game.html">
+          <a href="https://flyingoctopus.itch.io/asterielle" target="_blank">
             <button>
               zagraj
             </button>
           </a>
-
 
           <ul class="menu__list">
             <li class="menu__item">
@@ -213,16 +210,14 @@
           </ul>
 
 
-          <p> &copy; 2021 Flying Octopus. All rights reserved.</p>
+          <p> &copy;2021 <a href="https://flyingoctopus.pl" target="_blank">Flying Octopus</a>. All rights reserved.</p>
 
           <p>Icons made by <a href="https://icon54.com/" title="Pixel perfect" target="_blank">Pixel perfect</a> from <a
               href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a></p>
-
-
         </div>
+
         <div class="socials flex">
-          <a href="https://flyingoctopus.pl/?fbclid=IwAR0TZ6rk22tsmEYC1TJrCZMpAdpe9vJEFv5ZBROEi8D2GJDkv5-0Fd7QCag"
-            class="flex" target="_blank">
+          <a href="https://flyingoctopus.pl" class="flex" target="_blank">
 
             <img loading="lazy" src="./assets/icons/fo.svg" alt="fo-icon" class="octopus" />
           </a>
@@ -252,8 +247,7 @@
     });
   </script>
 
-
-  <script src="./scripts/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

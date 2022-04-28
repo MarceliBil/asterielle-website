@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+//COLORS
+$white: #f2f2f2;
+$lightgrey: #dfdfdf;
+$grey: #808080;
+$darkgrey: #303030;
+$black: #101010;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    background-color: $lightgrey;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section {
+    width: 100%;
+}
+button {
+    cursor: pointer;
+    border: 1px solid $white;
+    outline: none;
+    font-size: 0.9rem;
+    width: 180px;
+    background-color: $black;
+    color: $white;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+button:hover {
+    transform: scale(1.1);
+}
+.buttons {
+    display: grid;
+    gap: 30px;
+}
+.link {
+    background-color: $black;
+    height: 100px;
+    z-index: 1;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    margin: 0;
+    line-height: 1.7;
+    border-radius: 10px;
+}
+.link:hover {
+    transform: scale(1.1);
+}
+p {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+h2.section__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+.menu__list {
+    list-style: none;
+    .menu__item {
+        margin: 15px 0;
+        .menu__link {
+            color: $white;
+        }
+    }
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+@media (min-width: 900px) {
+    p {
+        font-size: 1rem;
+    }
+}
+
+/*COMMON ELEMENTS*/
+.footer {
+    width: 100%;
+    padding: 30px;
+    background-color: $black;
+    color: $grey;
+
+    .left {
+        a {
+            color: $lightgrey;
+        }
+        p {
+            width: 100%;
+            border-top: 0.5px solid $grey;
+            font-weight: 100;
+            text-align: center;
+            padding: 20px 0;
+        }
+        p:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    .socials {
+        a {
+            width: 50px;
+            height: 50px;
+            background-color: $darkgrey;
+            border-radius: 50%;
+            transition: 0.3s;
+            img {
+                width: 25px;
+            }
+        }
+        a:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
